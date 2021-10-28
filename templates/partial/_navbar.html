@@ -38,12 +38,11 @@
           >
             <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
           </li>
-        
         </ul>
 
         <ul class="navbar-nav ml-auto">
           <li 
-          {% if '/register' == request.path %}
+          {% if '/accounts/register' == request.path %}
             class="nav-item active mr-3"
           {% else %}
             class="nav-item"
@@ -53,7 +52,7 @@
               <i class="fas fa-user-plus"></i> Register</a>
           </li>
           <li 
-          {% if '/login' == request.path %}
+          {% if '/accounts/login' == request.path %}
             class="nav-item active mr-3"
           {% else %}
             class="nav-item"
